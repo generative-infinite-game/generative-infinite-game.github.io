@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Unbounded: A Generative Infinite Game of Character Life Simulation">
+  <meta name="keywords" content="Unbounded, Generative Game, Character Simulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unbounded: A Generative Infinite Game of Character Life Simulation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./prj_static/css/bulma.min.css">
+  <link rel="stylesheet" href="./prj_static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./prj_static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./prj_static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./prj_static/css/index.css">
+  <!-- <link rel="icon" href="./prj_static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./prj_static/js/fontawesome.all.min.js"></script>
+  <script src="./prj_static/js/bulma-carousel.min.js"></script>
+  <script src="./prj_static/js/bulma-slider.min.js"></script>
+  <script src="./prj_static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-3 publication-title">Unbounded: A Generative Infinite Game of Character Life Simulation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://jialuli-luka.github.io/">Jialu Li<sup>1,2</sup></a>      </span>
+              <span class="author-block", style="padding-left:30px">
+                <a href="https://people.csail.mit.edu/yzli/">Yuanzhen Li<sup>1</sup></a></span>
+                <span class="author-block", style="padding-left:30px">
+                  <a href="https://nealwadhwa.com/">Neal Wadhwa<sup>1</sup></a></span>
+                  <span class="author-block", style="padding-left:30px">
+                    <a href="https://research.google/people/106214/?&type=google">Yael Pritch<sup>1</sup></a></span>
+                    <span class="author-block", style="padding-left:30px">
+                      <a href="https://graphics.stanford.edu/~dejacobs/">David E. Jacobs<sup>1</sup></a></span>
+                      <span class="author-block", style="padding-left:30px">
+                        <a href="https://people.csail.mit.edu/mrub/">Michael Rubinstein<sup>1</sup></a></span>
+            <span class="author-block", style="padding-left:30px">
+              <a href="https://www.cs.unc.edu/~mbansal/">Mohit Bansal<sup>2</sup></a></span>
+              <span class="author-block", style="padding-left:30px">
+                <a href="https://natanielruiz.github.io/">Nataniel Ruiz<sup>1</sup></a></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Google</span>
+            <span class="author-block", style="padding-left:30px"><sup>2</sup>University of North Carolina, Chapel Hill</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <center><img src="./images/teaser.png" alt="Teaser" width="100%"></center>
+
+      <div class="content has-text-justified">
+        We follow the life of <i>Archibus</i>, the user's custom wizard character. 
+        The user can interact with the generative game using natural language, and Archibus' hunger, energy and fun meters update accordingly. 
+        A spontaneous and unconstrained story unfolds while the user playing, and the character can explore new environments with a myriad of possible actions and unexpected interactions. 
+        The game runs in interactive speeds, refreshing every second.
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce the concept of a <b>generative infinite game</b>, a video game that transcends the traditional boundaries of finite, hard-coded systems by using generative models. 
+            Inspired by James P. Carse's distinction between finite and infinite games, we leverage recent advances in generative AI to create <b>Unbounded</b>: a game of character life simulation that is fully encapsulated in generative models. 
+            Specifically, Unbounded draws inspiration from sandbox life simulations and allows you to interact with your autonomous virtual character in a virtual world by feeding, playing with and guiding it - with open-ended mechanics generated by an LLM, some of which can be emergent. 
+            In order to develop Unbounded, we propose technical innovations in both the LLM and visual generation domains. 
+            Specifically, we present: (1) a specialized, distilled large language model (LLM) that dynamically generates game mechanics, narratives, and character interactions in real-time, and (2) a new dynamic regional image prompt Adapter (IP-Adapter) for vision models that ensures consistent yet flexible visual generation of a character across multiple environments. 
+            We evaluate our system through both qualitative and quantitative analysis, showing significant improvements in character life simulation, user instruction following, narrative coherence, and visual consistency for both characters and the environments compared to traditional related approaches.
+          </p>
+        </div>
+      </div>
+    </div>
+
+</section>
+<hr>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Method</h2>
+
+      <h2 class="title is-5">Task Overview</h2>
+
+    <center><img src="./images/overview.png" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">
+      Based on an initial user input, Unbounded sets up game simulation environments, and generates character actions in the environments. 
+      Users can interact with the character with natural language instructions, exploring the game with unlimited options.
+    </div>
+  </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+
+      <br>
+      <h2 class="title is-5">Regional IP-Adapter with Block Drop for Environment Consistency</h2>
+
+      <center><img src="./images/img_method.png" alt="Teaser" width="100%"></center>
+
+      <div class="content has-text-justified">
+        <p><b>(a)</b> We achieve real-time image generation with LCM LoRA, maintain character consistency with DreamBooth LoRAs, and introduce a regional IP-Adapter (shown in (c)) for improved environment and character consistency. </p>
+        <p><b>(b)</b>  Our proposed dynamic mask genreation separating the environment and character conditioning, preventing interference between the two. </p>
+        <p><b>(c)</b>  Our approach introduces dual-conditioning and dynamic regional injection mechanism to represent both character and environment simultaneously in the generated images.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <br>
+      <h2 class="title is-5">Language Model Game Engine with Open Ended Interactions and Integrated Game Mechanics</h2>
+
+      <center><img src="./images/lang_method.png" alt="Teaser" width="80%"></center>
+
+      <div class="content has-text-justified">
+        <p>Overview of our user-simulation data collection process for LLM distillation.</p>
+        <p><b>(a)</b> We begin by collecting diverse topic and character data, filtered using ROUGE-L for diversity. </p>
+        <p><b>(b)</b> The World LLM and User LLM interact to generate user-simulation data through multi-round exchanges.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Results</h2>
+
+      <h2 class="title is-5">Comparison with Different Approaches for Maintaining Environment Consistency and Character Consistency</h2>
+
+    <center><img src="./images/comparison.png" alt="Teaser" width="100%"></center>
+
+    <div class="content has-text-justified">Our regional IP-Adapter with block drop consistently generates images with high character consistency, whereas other methods may fail to include the character or generate characters with inconsistent appearances (Example 1 & 2). 
+      Furthermore, we show that our approach balances environment consistency and character consistency well, while other approaches might generate environments that differ from the condition environment (e.g., StoryDiffusion in Example 1 & 3).
+    </div>
+  </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <br>
+      <h2 class="title is-5">Effectiveness of Dynamic Regional IP-Adapter with Block Drop</h2>
+
+      <center><img src="./images/ablation.png" alt="Teaser" width="80%"></center>
+
+      <div class="content has-text-justified">
+        Conditioning on the environment using IP-Adapter achieves good environment reconstruction, but the character consistency is influenced by the environment style. Introducing block drop improves adherence to the text prompt, resulting in images with the correct spatial layout for both the character and the environment. 
+        However, the character's appearance remains influenced by the surrounding environment. By incorporating our proposed regional injection mechanism with our proposed dynamic mask scheme, the generated images achieve strong character consistency while maintaining effective conditioning on the environment.
+         </div>
+    </div>
+
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <br>
+      <h2 class="title is-5">Effectiveness of Distilling Specialized Large Language Model</h2>
+
+      <center><img src="./images/lang_table.png" alt="Teaser" width="100%"></center>
+
+      <div class="content has-text-justified">
+        Our diverse user-simulator interaction data effectively distills Gemma-2B into a capable game engine. 
+        In this table, zero-shot inference with small LLMs (i.e., Gemma-2B, Llama3.2-3B), or a slightly larger LLM (i.e., Gemma-7B) results in lower performance compared to ours, highlighting the importance of distillation from a stronger LLM for game world and character action simulation. 
+        Furthermore, we show that our model achieves performance comparable to GPT-4o, validating the effectiveness of our approach. 
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<hr>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{li2024unbounded,
+  author    = {Jialu Li, Yuanzhen Li, Neal Wadhwa, Yael Pritch, David E. Jacobs, Michael Rubinstein, Mohit Bansal, and Nataniel Ruiz},
+  title     = {Unbounded: A Generative Infinite Game of Character Life Simulation},
+  journal   = {arxiv},
+  year      = {2024},
+  url       = {}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p style="text-align:right;font-size:small;">
+          <a href="https://github.com/nerfies/nerfies.github.io">
+            This guy makes a nice webpage.
+          </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
